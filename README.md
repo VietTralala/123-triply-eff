@@ -15,19 +15,23 @@ This repository contains the implementation of the numerical studies presented i
   ```bash
   conda create -n <env_name>
   conda activate <env_name>
-  conda install -c conda-forge uv
+  conda install -c conda-forge uv python
   ```
 
-- **2. Install dependencies**
+- **2. Clone repo**
   ```bash
-  uv init
+  git clone https://github.com/VietTralala/123-triply-eff.git 
+  cd 123-triply-eff
   ```
 
-- **3. Install local package**
+- **3. Install local package into conda**
   ```bash
   uv pip install -e .
   ```
 
+### Notes
+* `uv run python ...` will create a `.venv` folder and install things in there.
+* whereas `uv pip install -e .` will install the package into the conda env so that we can just use `python - m ...`
 ---
 
 ### Workflow Steps
